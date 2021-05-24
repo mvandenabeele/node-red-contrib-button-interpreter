@@ -1,0 +1,12 @@
+{
+	"name": "node-red-contrib-button-interpreter",
+	"version"      : "0.0.1",
+    "description"  : "An interpreter for button signals",
+    "dependencies": {
+    },
+    "keywords": [ "node-red" ],
+	"node-red": {
+		"buttoninterpreter": "buttoninterpreter.js",
+		"buttonsettings": "buttonsettings.js"
+	}
+}
