@@ -8,5 +8,9 @@
 	"node-red": {
 		"buttoninterpreter": "buttoninterpreter.js",
 		"buttonsettings": "buttonsettings.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mvandenabeele/node-red-contrib-button-interpreter"
 	}
 }
