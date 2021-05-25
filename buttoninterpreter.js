@@ -19,7 +19,7 @@ module.exports = function(RED) {
             return theButtons[button];
         }
 
-        var timer_ms = 3000;
+        var timer_ms = this.buttonsettings.timeout;
 
         function processAction( button, action ) {
             var theBtnInfo = getButtonInfo(button);

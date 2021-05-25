@@ -3,8 +3,7 @@
         category: 'config',
         defaults: {
             name: {value:"name",required:true},
-            latitude: {value:"latitude",required:true},
-            longitude: {value:"longitude",required:true},
+            timeout: {value: 200,required:true},
         },
         label: function() {
             return this.name;
@@ -18,11 +17,8 @@
         <input type="text" id="node-config-input-name">
     </div>
     <div class="form-row">
-        <label for="node-input-latitude"><i class="fa fa-bookmark"></i> Latitude</label>
-        <input type="text" id="node-config-input-latitude">
+        <label for="node-input-timeout"><i class="fa fa-bookmark"></i> Timeout</label>
+        <input type="number" id="node-config-input-timeout">
     </div>
-    <div class="form-row">
-        <label for="node-input-longitude"><i class="fa fa-bookmark"></i> Longitude</label>
-        <input type="text" id="node-config-input-longitude">
-    </div>
+
 </script>
