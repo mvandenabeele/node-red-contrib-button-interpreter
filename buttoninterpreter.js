@@ -71,15 +71,17 @@ module.exports = function(RED) {
             // fallback to using `node.send`
             send = send || function() { node.send.apply(node,arguments) }
 
-            var underscore = msg.payload.lastIndexOf("_");
-            if( underscore < 0 ) {
-                processAction("toggle", "click");
-            }
-            else {
-                var btnName = msg.payload.substr(0, underscore);
-                var btnAction = msg.payload.substr(underscore+1);
-                
-                processAction(btnName, btnAction);
+            if( msg.payload ) {
+                var underscore = msg.payload.lastIndexOf("_");
+                if( underscore < 0 ) {
+                    processAction("toggle", "click");
+                }
+                else {
+                    var btnName = msg.payload.substr(0, underscore);
+                    var btnAction = msg.payload.substr(underscore+1);
+                    
+                    processAction(btnName, btnAction);
+                }
             }
 
             if (done) {

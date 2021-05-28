@@ -1,6 +1,6 @@
 {
 	"name": "node-red-contrib-button-interpreter",
-	"version"      : "0.0.3",
+	"version"      : "0.0.4",
     "description"  : "An interpreter for button signals",
     "dependencies": {
     },
@@ -14,5 +14,6 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mvandenabeele/node-red-contrib-button-interpreter"
-	}
+	},
+	"license": "MIT"
 }
