@@ -48,6 +48,13 @@ module.exports = function(RED) {
             else if( action === "hold" ) {
                 var now = Date.now();
                 last_msg_timestamp = now;
+
+                var n = {
+                    payload: theBtnInfo.name,
+                    action: "hold_start",
+                };
+                
+                node.send(n);
             }
             else if( action === "release") {
                 var now = Date.now();
@@ -55,7 +62,7 @@ module.exports = function(RED) {
 
                 var n = {
                     payload: theBtnInfo.name,
-                    action: "hold",
+                    action: "hold_end",
                     delta: delta
                 };
                 
